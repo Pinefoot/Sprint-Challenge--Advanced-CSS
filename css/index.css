@@ -194,13 +194,15 @@ button {
   }
 }
 .navbar {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: space-evenly;
   flex-wrap: wrap;
-  background-color: whitesmoke;
-  padding: 2%;
-  padding-bottom: 1%;
+  background-color: #f5f5f565;
+  padding: 1%;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .navbar {
@@ -243,6 +245,9 @@ footer {
 }
 .home {
   width: 100%;
+}
+.home .intro {
+  padding-top: 13%;
 }
 .home .intro h2 {
   padding: 15px;
