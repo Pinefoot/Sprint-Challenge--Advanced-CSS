@@ -1,4 +1,5 @@
 // Mixins Here
+//button parametric mixin
 .custom-btn(@bgcolor, @width, @fontcolor){
     display: flex;
     justify-content: space-evenly;
@@ -8,16 +9,30 @@
     height: 7.6vh;
     align-items: center;
     color: @fontcolor;
-    border-radius: 13px;
+    border-radius: 8px;
     font-family: 'Ubuntu', sans-serif;
-    padding: 20%;
+    padding: 6%%;
     width: 100%;
 
     
 
     &:hover {
-        background-color:darken(@fontcolor, 30%);
+        background-color:@fontcolor;
         color: @bgcolor;
     } 
 
+}
+
+//mixins
+.flex(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.mobileflexer(@Mjust, @Malign, @Mdirec){
+    display: flex;
+    justify-content: @Mjust;
+    align-items: @Malign;
+    flex-direction: @Mdirec;
 }

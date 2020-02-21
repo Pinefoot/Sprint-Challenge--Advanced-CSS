@@ -45,11 +45,21 @@ a{
   font-size: 1.6rem;
   width:7%;
   color: @header-font-color;
+  @media @mobile{
+    .flex(center,space-evenly);
+    width:15%;
+  }
+
 }
 
 button{
   padding: 0;
   border:0;
+  width: 30%;
+  @media @mobile{
+    .mobileflexer(center, center,"");
+    width: 100%;
+  }
 }
 
 
