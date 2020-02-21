@@ -1,1 +1,23 @@
 // Mixins Here
+.custom-btn(@bgcolor, @width, @fontcolor){
+    display: flex;
+    justify-content: space-evenly;
+    width: @width;
+    background-color: @bgcolor;
+    font-size: 1.8rem;
+    height: 7.6vh;
+    align-items: center;
+    color: @fontcolor;
+    border-radius: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20%;
+    width: 100%;
+
+    
+
+    &:hover {
+        background-color:darken(@fontcolor, 30%);
+        color: @bgcolor;
+    } 
+
+}
